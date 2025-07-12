@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Hub | SkillSphere</title>
+    <link rel="stylesheet" href="community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="community-container">
+        <!-- Animated Background Elements -->
+        <div class="particles"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <header class="community-header">
+            <h1 class="glowing-text">Community <span>Hub</span></h1>
+            <p class="subtitle">Connect, collaborate, and grow with like-minded professionals</p>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search members, skills, topics..." class="search-input">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <div class="search-suggestions"></div>
+            </div>
+            
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="recent">Recent</button>
+                <button class="filter-btn" data-filter="popular">Popular</button>
+                <button class="filter-btn" data-filter="nearby">Nearby</button>
+                <button class="filter-btn" data-filter="ai">AI Enhanced</button>
+            </div>
+        </header>
+
+        <main class="community-main">
+            <div class="stats-panel">
+                <div class="stat-card">
+                    <div class="stat-value" id="member-count">12,847</div>
+                    <div class="stat-label">Total Members</div>
+                    <div class="stat-graph"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="skill-count">3,562</div>
+                    <div class="stat-label">Skills Shared</div>
+                    <div class="stat-graph"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="collab-count">892</div>
+                    <div class="stat-label">Active Collabs</div>
+                    <div class="stat-graph"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="ai-count">1,024</div>
+                    <div class="stat-label">AI Matches</div>
+                    <div class="stat-graph"></div>
+                </div>
+            </div>
+
+            <div class="community-grid">
+                <!-- Member Card 1 -->
+                <div class="member-card" data-audio="true">
+                    <div class="card-header">
+                        <div class="avatar-container">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="avatar">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Chen</h3>
+                            <p class="title">AI Researcher @ NeuroTech</p>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i> San Francisco, CA
+                            </div>
+                        </div>
+                        <button class="connect-btn pulse-effect">Connect</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="skills">
+                            <span class="skill-tag">Machine Learning</span>
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TensorFlow</span>
+                        </div>
+                        <p class="bio">Developing next-gen AI models for healthcare applications. Let's collaborate on ethical AI projects!</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="engagement">
+                            <span><i class="fas fa-heart"></i> 128</span>
+                            <span><i class="fas fa-comment"></i> 42</span>
+                            <span><i class="fas fa-share"></i> 18</span>
+                        </div>
+                        <div class="ai-match">
+                            <div class="match-score">92% match</div>
+                            <div class="match-bar">
+                                <div class="match-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-effects"></div>
+                </div>
+
+                <!-- Member Card 2 -->
+                <div class="member-card" data-video="true">
+                    <div class="card-header">
+                        <div class="avatar-container">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" class="avatar">
+                            <div class="online-status busy"></div>
+                        </div>
+                        <div class="member-info">
+                            <h3>David Park</h3>
+                            <p class="title">Creative Director @ Visionary</p>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i> New York, NY
+                            </div>
+                        </div>
+                        <button class="connect-btn">Connect</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="skills">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">AR/VR</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">3D Modeling</span>
+                        </div>
+                        <p class="bio">Pushing boundaries in immersive experiences. Currently exploring AI-generated art and spatial computing.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="engagement">
+                            <span><i class="fas fa-heart"></i> 86</span>
+                            <span><i class="fas fa-comment"></i> 24</span>
+                            <span><i class="fas fa-share"></i> 12</span>
+                        </div>
+                        <div class="ai-match">
+                            <div class="match-score">78% match</div>
+                            <div class="match-bar">
+                                <div class="match-fill" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-effects"></div>
+                </div>
+
+                <!-- AI Recommended Connection -->
+                <div class="member-card ai-highlight">
+                    <div class="ai-badge">AI Recommended</div>
+                    <div class="card-header">
+                        <div class="avatar-container">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Profile" class="avatar">
+                            <div class="online-status"></div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Maria Gonzalez</h3>
+                            <p class="title">Blockchain Developer @ Decentra</p>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i> Austin, TX
+                            </div>
+                        </div>
+                        <button class="connect-btn pulse-effect">Connect</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="skills">
+                            <span class="skill-tag">Solidity</span>
+                            <span class="skill-tag">Smart Contracts</span>
+                            <span class="skill-tag">Web3</span>
+                            <span class="skill-tag">Rust</span>
+                        </div>
+                        <p class="bio">Building decentralized future. Expert in DeFi protocols and DAO governance systems.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="engagement">
+                            <span><i class="fas fa-heart"></i> 156</span>
+                            <span><i class="fas fa-comment"></i> 53</span>
+                            <span><i class="fas fa-share"></i> 27</span>
+                        </div>
+                        <div class="ai-match">
+                            <div class="match-score">95% match</div>
+                            <div class="match-bar">
+                                <div class="match-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover-effects"></div>
+                </div>
+
+                <!-- Event Card -->
+                <div class="event-card">
+                    <div class="event-header">
+                        <div class="event-date">
+                            <div class="date-day">15</div>
+                            <div class="date-month">JUN</div>
+                        </div>
+                        <div class="event-info">
+                            <h3>AI & Creativity Symposium</h3>
+                            <p class="event-type">Virtual Conference</p>
+                        </div>
+                    </div>
+                    <div class="event-body">
+                        <p class="event-desc">Exploring the intersection of artificial intelligence and human creativity with industry leaders.</p>
+                        <div class="speakers">
+                            <div class="speaker">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Speaker">
+                                <span>Dr. Alan Wu</span>
+                            </div>
+                            <div class="speaker">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Speaker">
+                                <span>Lisa Zhang</span>
+                            </div>
+                            <div class="speaker-count">+5 more</div>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <div class="event-stats">
+                            <span><i class="fas fa-users"></i> 1.2K attending</span>
+                            <span><i class="fas fa-clock"></i> 10:00 AM PST</span>
+                        </div>
+                        <button class="rsvp-btn">RSVP</button>
+                    </div>
+                    <div class="event-glows"></div>
+                </div>
+
+                <!-- More cards would continue here -->
+            </div>
+        </main>
+
+        <footer class="community-footer">
+            <div class="view-more">
+                <button class="load-more-btn">
+                    <span>Load More</span>
+                    <div class="loading-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </button>
+            </div>
+            <div class="ai-assistant">
+                <button class="ai-btn">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Match Assistant</span>
+                    <div class="pulse-ring"></div>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="community.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap | Exchange Skills, Grow Together</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+    
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container">
+            <a href="#" class="logo">Skill<span>Swap</span></a>
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="browse-skills.html" class="nav-link">Browse Skills</a>
+                <a href="add_skill.html" class="nav-link">Add Skill</a>
+                <a href="my-swaps.html" class="nav-link">My Swaps</a>
+                <a href="community.html" class="nav-link"> Community</a>
+
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Log In</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gradient">Exchange Skills</span>
+                    <span>Without Exchanging Money</span>
+                </h1>
+                <p class="hero-subtitle">Connect with people who have the skills you need and share what you know in return.</p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                    <a href="#" class="btn btn-outline btn-lg">
+                        <i class="fas fa-play"></i> Watch Demo
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-cards">
+                    <div class="skill-card card-1">
+                        <div class="card-content">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                                <div>
+                                    <h4>Sarah K.</h4>
+                                    <p>Graphic Designer</p>
+                                </div>
+                            </div>
+                            <div class="skill-tags">
+                                <span>Photoshop</span>
+                                <span>Illustrator</span>
+                            </div>
+                            <div class="wants">
+                                <p>Wants to learn:</p>
+                                <span>Spanish</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card card-2">
+                        <div class="card-content">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                                <div>
+                                    <h4>Michael T.</h4>
+                                    <p>Photographer</p>
+                                </div>
+                            </div>
+                            <div class="skill-tags">
+                                <span>Portrait Photography</span>
+                                <span>Lightroom</span>
+                            </div>
+                            <div class="wants">
+                                <p>Wants to learn:</p>
+                                <span>Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-card card-3">
+                        <div class="card-content">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                                <div>
+                                    <h4>Jessica L.</h4>
+                                    <p>Spanish Tutor</p>
+                                </div>
+                            </div>
+                            <div class="skill-tags">
+                                <span>Spanish</span>
+                                <span>French</span>
+                            </div>
+                            <div class="wants">
+                                <p>Wants to learn:</p>
+                                <span>Graphic Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <h3 class="stat-number" data-count="25000">0</h3>
+                <p class="stat-label">Active Members</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-count="12000">0</h3>
+                <p class="stat-label">Successful Swaps</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-count="150">0</h3>
+                <p class="stat-label">Skills Available</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-count="98">0</h3>
+                <p class="stat-label">% Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How <span>SkillSwap</span> Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Create Your Profile</h3>
+                        <p>List the skills you can offer and what you'd like to learn in return.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Find Your Match</h3>
+                        <p>Browse our community or let our algorithm suggest perfect matches.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Start Swapping</h3>
+                        <p>Connect with your match and begin your skill exchange journey.</p>
+                    </div>
+                    <div class="step-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Skills Section -->
+    <section class="popular-skills">
+        <div class="container">
+            <h2 class="section-title">Popular <span>Skills</span> to Exchange</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Tech</h3>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Graphic Design</li>
+                        <li>Data Analysis</li>
+                        <li>Mobile App Development</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <ul>
+                        <li>Spanish</li>
+                        <li>French</li>
+                        <li>Mandarin</li>
+                        <li>German</li>
+                        <li>Japanese</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-utensils"></i> Lifestyle</h3>
+                    <ul>
+                        <li>Cooking</li>
+                        <li>Photography</li>
+                        <li>Yoga Instruction</li>
+                        <li>Personal Training</li>
+                        <li>Meditation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-briefcase"></i> Professional</h3>
+                    <ul>
+                        <li>Resume Writing</li>
+                        <li>Public Speaking</li>
+                        <li>Financial Planning</li>
+                        <li>Marketing Strategy</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Success <span>Stories</span></h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <div class="user-info">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="User">
+                            <div>
+                                <h4>Emma Rodriguez</h4>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                        <p class="quote">"I taught Spanish to Jessica in exchange for her amazing graphic design skills. Now I have professional branding for my business and she's fluent in Spanish!"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="user-info">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User">
+                            <div>
+                                <h4>David Kim</h4>
+                                <p>Web Developer</p>
+                            </div>
+                        </div>
+                        <p class="quote">"Through SkillSwap, I learned photography from a professional while teaching him web development. We've since collaborated on several projects together."</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <div class="user-info">
+                            <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="User">
+                            <div>
+                                <h4>Sophia Chen</h4>
+                                <p>Marketing Consultant</p>
+                            </div>
+                        </div>
+                        <p class="quote">"I exchanged marketing consultation for French lessons and it's been transformative for both my career and personal growth. The perfect win-win!"</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Swapping Skills?</h2>
+            <p>Join our community of learners and teachers today</p>
+            <a href="#" class="btn btn-primary btn-lg">Sign Up Free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>SkillSwap</h3>
+                    <p>Connecting people through the exchange of knowledge and skills since 2023.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Browse Skills</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Community Guidelines</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new features and success stories.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkillSwap. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>

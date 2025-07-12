@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Swaps | SkillSwap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="my-swaps.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Skill<span>Swap</span></a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="browse-skills.html" class="nav-link">Browse Skills</a>
+                <a href="add_skill.html" class="nav-link">Add Skill</a>
+                <a href="my-swaps.html" class="nav-link active">My Swaps</a>
+                <a href="community.html" class="nav-link"> Community</a>
+
+                <div class="user-avatar">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                </div>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="my-swaps-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>My Swaps</h1>
+                    <p class="stats">4 Active | 12 Completed | 98% Success Rate</p>
+                    <p class="subtitle">Manage your skill exchanges in one place</p>
+                </div>
+                <div class="hero-image">
+                    <img src="https://illustrations.popsy.co/amber/digital-nomad.svg" alt="People exchanging skills">
+                </div>
+            </div>
+        </section>
+
+        <!-- Status Tabs -->
+        <section class="status-tabs">
+            <div class="container">
+                <div class="tabs-container">
+                    <button class="tab-btn active" data-tab="active">
+                        Active <span class="badge">3</span>
+                    </button>
+                    <button class="tab-btn" data-tab="pending">
+                        Pending <span class="badge">2</span>
+                    </button>
+                    <button class="tab-btn" data-tab="completed">
+                        Completed <span class="rating">★★★★☆</span>
+                    </button>
+                    <button class="tab-btn" data-tab="archived">
+                        Archived
+                    </button>
+                    <div class="tab-indicator"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search and Filter -->
+        <section class="search-filter">
+            <div class="container">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search swaps...">
+                    <button class="filter-btn">
+                        <i class="fas fa-sliders-h"></i> Filters
+                    </button>
+                </div>
+                <div class="sort-container">
+                    <span>Sort by:</span>
+                    <select>
+                        <option>Recent</option>
+                        <option>Priority</option>
+                        <option>Alphabetical</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Swaps Container -->
+        <section class="swaps-container">
+            <div class="container">
+                <!-- Active Swaps -->
+                <div class="swap-type active" id="active-tab">
+                    <h2 class="section-title">
+                        <i class="fas fa-sync-alt"></i> Active Swaps
+                    </h2>
+                    
+                    <!-- Swap Card 1 -->
+                    <div class="swap-card">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                                <div>
+                                    <h3>David Kim</h3>
+                                    <p>Spanish Tutoring ↔ Web Development</p>
+                                    <span class="status-badge active">In Progress</span>
+                                </div>
+                            </div>
+                            <div class="swap-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                Next session: Tomorrow, 3 PM
+                            </div>
+                        </div>
+                        
+                        <div class="progress-tracker">
+                            <div class="progress-bar" style="width: 65%"></div>
+                            <div class="milestones">
+                                <span class="completed">Intro</span>
+                                <span class="completed">Basics</span>
+                                <span class="current">Conversation</span>
+                                <span>Advanced</span>
+                                <span>Final</span>
+                            </div>
+                            <div class="progress-text">Session 3/5 completed</div>
+                        </div>
+                        
+                        <div class="card-body">
+                            <div class="session-details">
+                                <div>
+                                    <i class="fas fa-video"></i>
+                                    <span>Zoom Meeting</span>
+                                    <a href="#" class="join-btn">Join</a>
+                                </div>
+                                <div>
+                                    <i class="fas fa-link"></i>
+                                    <a href="#" class="resource-link">Shared Resources</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-actions">
+                                <button class="btn message-btn">
+                                    <i class="fas fa-comment-dots"></i> Message
+                                </button>
+                                <button class="btn reschedule-btn">
+                                    <i class="fas fa-calendar-alt"></i> Reschedule
+                                </button>
+                                <button class="btn complete-btn">
+                                    <i class="fas fa-check-circle"></i> Mark Complete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Swap Card 2 -->
+                    <div class="swap-card">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                                <div>
+                                    <h3>Emma Rodriguez</h3>
+                                    <p>Photography ↔ Yoga Instruction</p>
+                                    <span class="status-badge active">In Progress</span>
+                                </div>
+                            </div>
+                            <div class="swap-date">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Central Park, Saturday 10 AM
+                            </div>
+                        </div>
+                        
+                        <div class="progress-tracker">
+                            <div class="progress-bar" style="width: 30%"></div>
+                            <div class="milestones">
+                                <span class="completed">Intro</span>
+                                <span class="current">Basics</span>
+                                <span>Portfolio</span>
+                                <span>Advanced</span>
+                            </div>
+                            <div class="progress-text">Session 1/4 completed</div>
+                        </div>
+                        
+                        <div class="card-body">
+                            <div class="session-details">
+                                <div>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Meeting in person</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-link"></i>
+                                    <a href="#" class="resource-link">Reference Materials</a>
+                                </div>
+                            </div>
+                            
+                            <div class="card-actions">
+                                <button class="btn message-btn">
+                                    <i class="fas fa-comment-dots"></i> Message
+                                </button>
+                                <button class="btn reschedule-btn">
+                                    <i class="fas fa-calendar-alt"></i> Reschedule
+                                </button>
+                                <button class="btn complete-btn">
+                                    <i class="fas fa-check-circle"></i> Mark Complete
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pending Swaps -->
+                <div class="swap-type pending" id="pending-tab" style="display: none;">
+                    <h2 class="section-title">
+                        <i class="fas fa-clock"></i> Pending Requests
+                    </h2>
+                    
+                    <!-- Pending Card 1 -->
+                    <div class="swap-card pending">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User">
+                                <div>
+                                    <h3>Michael Chen</h3>
+                                    <p>Wants to learn: Graphic Design</p>
+                                    <span class="status-badge pending">Pending Approval</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-body">
+                            <div class="request-details">
+                                <p><i class="fas fa-exchange-alt"></i> Offers: Financial Planning</p>
+                                <p><i class="fas fa-clock"></i> Proposed: 4 sessions over 2 weeks</p>
+                                <p><i class="fas fa-sticky-note"></i> Note: "I'd love to learn logo design and branding basics"</p>
+                            </div>
+                            
+                            <div class="card-actions">
+                                <button class="btn accept-btn">
+                                    <i class="fas fa-check"></i> Accept
+                                </button>
+                                <button class="btn counter-btn">
+                                    <i class="fas fa-pen"></i> Counteroffer
+                                </button>
+                                <button class="btn decline-btn">
+                                    <i class="fas fa-times"></i> Decline
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Completed Swaps -->
+                <div class="swap-type completed" id="completed-tab" style="display: none;">
+                    <h2 class="section-title">
+                        <i class="fas fa-check-circle"></i> Completed Swaps
+                    </h2>
+                    
+                    <!-- Completed Card 1 -->
+                    <div class="swap-card completed">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="User">
+                                <div>
+                                    <h3>Sarah Johnson</h3>
+                                    <p>Spanish Tutoring ↔ Web Development</p>
+                                    <span class="status-badge completed">Completed</span>
+                                </div>
+                            </div>
+                            <div class="swap-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                Finished: June 15, 2023
+                            </div>
+                        </div>
+                        
+                        <div class="card-body">
+                            <div class="skill-badges">
+                                <span class="skill-badge">
+                                    <i class="fas fa-language"></i> Spanish: Intermediate
+                                </span>
+                            </div>
+                            
+                            <div class="review-section">
+                                <div class="rating-prompt">
+                                    <p>Rate your experience with Sarah Johnson</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="testimonial-toggle">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <span>Add public testimonial</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Empty State -->
+                <div class="empty-state" id="empty-state" style="display: none;">
+                    <img src="https://illustrations.popsy.co/amber/reading-list.svg" alt="No swaps yet">
+                    <h3>No swaps yet!</h3>
+                    <p>Start by browsing skills or adding your own to offer</p>
+                    <div class="cta-buttons">
+                        <a href="browse-skills.html" class="btn primary-btn">
+                            Browse Skills
+                        </a>
+                        <a href="#" class="btn secondary-btn">
+                            How It Works <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Metrics -->
+        <section class="metrics-section">
+            <div class="container">
+                <div class="metrics-card">
+                    <h3><i class="fas fa-chart-line"></i> Your Swap Performance</h3>
+                    <div class="metrics-grid">
+                        <div class="metric">
+                            <div class="metric-value">98%</div>
+                            <div class="metric-label">Success Rate</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">4.6</div>
+                            <div class="metric-label">Avg. Rating</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">24</div>
+                            <div class="metric-label">Total Hours</div>
+                        </div>
+                    </div>
+                    <button class="export-btn">
+                        <i class="fas fa-download"></i> Download Swap History
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Action Button (Mobile) -->
+    <button class="fab">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <script src="my-swaps.js"></script>
+</body>
+</html>

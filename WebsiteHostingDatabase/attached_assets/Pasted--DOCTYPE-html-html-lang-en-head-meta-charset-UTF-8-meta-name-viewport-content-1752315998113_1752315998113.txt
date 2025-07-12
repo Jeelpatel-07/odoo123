@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Skill | SkillSwap</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="add_skill.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Skill<span>Swap</span></a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="browse-skills.html" class="nav-link">Browse Skills</a>
+                <a href="add_skill.html" class="nav-link active">Add Skill</a>
+                <a href="my-swaps.html" class="nav-link active">My Swaps</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <div class="user-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="add-skill-container container">
+        <div class="page-header">
+            <h1>Add Your Skill</h1>
+            <p>Share what you can offer and what you'd like to learn in return</p>
+        </div>
+
+        <div class="form-container">
+            <!-- Form Column -->
+            <div class="form-column">
+                <!-- Skill Details Section -->
+                <div class="form-section">
+                    <h2 class="section-title"><i class="fas fa-pencil-alt"></i> Skill Details</h2>
+                    
+                    <div class="form-group">
+                        <label for="skill-name">Skill Name</label>
+                        <input type="text" id="skill-name" class="form-control" placeholder="What skill can you offer? (e.g., Spanish Tutoring, Web Development)">
+                        <div class="hint">Start typing to see suggestions</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Skill Category</label>
+                        <div class="skill-categories">
+                            <div class="category-option selected">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Tech</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-language"></i>
+                                <span>Languages</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Creative</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Professional</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-heart"></i>
+                                <span>Lifestyle</span>
+                            </div>
+                            <div class="category-option">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <span>Other</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Skill Level</label>
+                        <div class="skill-levels">
+                            <div class="level-option">
+                                Beginner
+                            </div>
+                            <div class="level-option selected">
+                                Intermediate
+                            </div>
+                            <div class="level-option">
+                                Advanced
+                            </div>
+                            <div class="level-option">
+                                Expert
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="skill-description">Description</label>
+                        <textarea id="skill-description" class="form-control" placeholder="Describe your skill, experience, and teaching style."></textarea>
+                        <div class="hint">Minimum 50 characters</div>
+                    </div>
+                </div>
+
+                <!-- Availability Section -->
+                <div class="form-section">
+                    <h2 class="section-title"><i class="far fa-calendar-alt"></i> Availability</h2>
+                    
+                    <div class="form-group">
+                        <label>Scheduling</label>
+                        <div class="availability-options">
+                            <div class="availability-toggle">
+                                One-time session
+                            </div>
+                            <div class="availability-toggle selected">
+                                Ongoing availability
+                            </div>
+                        </div>
+                        
+                        <label>Preferred Times</label>
+                        <div class="time-slots">
+                            <div class="time-slot selected">Weekday mornings</div>
+                            <div class="time-slot">Weekday afternoons</div>
+                            <div class="time-slot selected">Weekday evenings</div>
+                            <div class="time-slot">Weekend mornings</div>
+                            <div class="time-slot">Weekend afternoons</div>
+                            <div class="time-slot">Weekend evenings</div>
+                            <div class="time-slot">Flexible</div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Location</label>
+                        <div class="location-options">
+                            <div class="location-option selected">
+                                Online
+                            </div>
+                            <div class="location-option">
+                                In-Person
+                            </div>
+                            <div class="location-option">
+                                Both
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Your location (for in-person)" style="margin-top: 10px;">
+                    </div>
+                </div>
+
+                <!-- Requested Skills Section -->
+                <div class="form-section">
+                    <h2 class="section-title"><i class="fas fa-exchange-alt"></i> What You Want in Return</h2>
+                    
+                    <div class="form-group">
+                        <label>Skills You Want to Learn</label>
+                        <div class="tag-input">
+                            <div class="tag">
+                                Photography <span class="tag-remove">&times;</span>
+                            </div>
+                            <div class="tag">
+                                Public Speaking <span class="tag-remove">&times;</span>
+                            </div>
+                            <input type="text" placeholder="Add skills...">
+                        </div>
+                        <div class="hint">Add at least one skill you'd like to learn</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Priority Level</label>
+                        <select class="form-control">
+                            <option>Not specified</option>
+                            <option>Low priority</option>
+                            <option selected>Medium priority</option>
+                            <option>High priority</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Media & Verification Section -->
+                <div class="form-section">
+                    <h2 class="section-title"><i class="fas fa-cloud-upload-alt"></i> Media & Verification</h2>
+                    
+                    <div class="form-group">
+                        <label>Add Media (Optional)</label>
+                        <div class="file-upload">
+                            <i class="fas fa-file-upload"></i>
+                            <p>Drag & drop files here or click to browse</p>
+                            <p class="hint">Supports: JPG, PNG, PDF, MP4 (max 25MB each)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Verification Badges</label>
+                        <div class="verification-badges">
+                            <div class="verification-badge">
+                                <i class="fab fa-linkedin"></i>
+                                <span>Connect LinkedIn</span>
+                            </div>
+                            <div class="verification-badge connected">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub Connected</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="certifications">Certifications (Optional)</label>
+                        <input type="text" id="certifications" class="form-control" placeholder="e.g., TESOL Certified #12345">
+                    </div>
+                </div>
+
+                <!-- Privacy Section -->
+                <div class="form-section">
+                    <h2 class="section-title"><i class="fas fa-lock"></i> Privacy & Visibility</h2>
+                    
+                    <div class="form-group">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <label>Make this skill public</label>
+                            <label class="switch">
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="hint">Public skills are visible to everyone. Private skills are only shown to potential matches.</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            Allow SkillSwap to suggest matches automatically
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <button class="btn btn-outline">Save Draft</button>
+                    <button class="btn btn-primary">Publish Skill <i class="fas fa-magic"></i></button>
+                </div>
+            </div>
+
+            <!-- Preview Column -->
+            <div class="preview-section">
+                <div class="preview-card">
+                    <h3 style="margin-bottom: 20px; color: var(--primary);">Live Preview</h3>
+                    
+                    <div class="preview-header">
+                        <div class="preview-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="preview-user">
+                            <h3>Your Name</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> Your Location</p>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-skill">
+                        <h4>Web Development</h4>
+                        <p>I can teach HTML, CSS, JavaScript and React. I have 5 years of professional experience building web applications.</p>
+                        
+                        <div class="preview-meta">
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                            <span><i class="far fa-clock"></i> Weekday evenings</span>
+                            <span><i class="fas fa-laptop"></i> Online</span>
+                        </div>
+                    </div>
+                    
+                    <div class="preview-wants">
+                        <p>Wants to learn:</p>
+                        <span>Photography</span>, <span>Public Speaking</span>
+                    </div>
+                </div>
+                
+                <div class="preview-help">
+                    <h4><i class="fas fa-question-circle"></i> Tips for a Great Listing</h4>
+                    <ul style="padding-left: 20px; margin-top: 10px; color: var(--gray); font-size: 0.9rem;">
+                        <li style="margin-bottom: 8px;">Be specific about what you can teach</li>
+                        <li style="margin-bottom: 8px;">Mention your experience level</li>
+                        <li style="margin-bottom: 8px;">Add clear availability</li>
+                        <li>List skills you genuinely want to learn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="add-skill.js"></script>
+</body>
+</html>

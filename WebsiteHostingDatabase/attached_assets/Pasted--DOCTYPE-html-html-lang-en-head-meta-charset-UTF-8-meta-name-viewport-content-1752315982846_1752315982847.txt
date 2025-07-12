@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Skills | SkillSwap</title>
+    <link rel="stylesheet" href="browse-skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-circle circle-1"></div>
+    <div class="bg-circle circle-2"></div>
+    <div class="bg-circle circle-3"></div>
+    
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container">
+            <a href="#" class="logo">Skill<span>Swap</span></a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link active">Home</a>
+                <a href="browse-skills.html" class="nav-link">Browse Skills</a>
+                <a href="add_skill.html" class="nav-link">Add Skill</a>
+                <a href="my-swaps.html" class="nav-link">My Swaps</a>
+                <a href="community.html" class="nav-link"> Community</a>
+
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-outline">Log In</a>
+                    <a href="#" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="browse-container">
+        <!-- Search and Filter Section -->
+        <section class="search-filter-section">
+            <div class="container">
+                <h1 class="page-title">Find Skills to <span>Swap</span></h1>
+                
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for skills (e.g. 'Photoshop', 'Spanish')">
+                    <button class="search-btn">Search</button>
+                </div>
+                
+                <!-- Filter Chips -->
+                <div class="filter-chips">
+                    <div class="chip active">All Skills</div>
+                    <div class="chip">Tech</div>
+                    <div class="chip">Languages</div>
+                    <div class="chip">Creative</div>
+                    <div class="chip">Professional</div>
+                    <div class="chip">Lifestyle</div>
+                </div>
+                
+                <!-- Advanced Filters -->
+                <div class="advanced-filters">
+                    <div class="filter-group">
+                        <label for="availability"><i class="far fa-clock"></i> Availability</label>
+                        <select id="availability">
+                            <option value="any">Any Time</option>
+                            <option value="weekdays">Weekdays</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="mornings">Mornings</option>
+                            <option value="evenings">Evenings</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="location"><i class="fas fa-map-marker-alt"></i> Location</label>
+                        <select id="location">
+                            <option value="any">Any Location</option>
+                            <option value="local">Near Me (10km)</option>
+                            <option value="online">Online Only</option>
+                            <option value="in-person">In-Person</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="skill-level"><i class="fas fa-signal"></i> Skill Level</label>
+                        <select id="skill-level">
+                            <option value="any">Any Level</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <button class="filter-btn">
+                        <i class="fas fa-sliders-h"></i> More Filters
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Grid -->
+        <section class="skills-grid-section">
+            <div class="container">
+                <div class="sort-options">
+                    <span>Sort by:</span>
+                    <select class="sort-select">
+                        <option value="relevance">Relevance</option>
+                        <option value="newest">Newest</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="distance">Nearest</option>
+                    </select>
+                    <div class="view-toggle">
+                        <button class="view-option active" data-view="grid"><i class="fas fa-th"></i></button>
+                        <button class="view-option" data-view="list"><i class="fas fa-list"></i></button>
+                    </div>
+                </div>
+                
+                <div class="skills-grid" id="skillsView">
+                    <!-- Skill Card 1 -->
+                    <div class="skill-card" data-category="tech" data-level="intermediate">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User">
+                                <div>
+                                    <h3>Sarah Johnson</h3>
+                                    <p><i class="fas fa-map-marker-alt"></i> 3.2km away</p>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Web Development</h4>
+                            <p>HTML, CSS, JavaScript, React</p>
+                            <div class="skill-meta">
+                                <span class="availability"><i class="far fa-clock"></i> Weekends</span>
+                                <span class="type"><i class="fas fa-laptop"></i> Online</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wanted-skills">
+                                <p>Wants to learn:</p>
+                                <span>Photography</span>
+                            </div>
+                            <button class="request-btn">Request Swap</button>
+                        </div>
+                        <div class="card-hover">
+                            <button class="quick-view">Quick View</button>
+                            <button class="save-skill"><i class="far fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Card 2 -->
+                    <div class="skill-card" data-category="languages" data-level="advanced">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User">
+                                <div>
+                                    <h3>David Kim</h3>
+                                    <p><i class="fas fa-map-marker-alt"></i> 1.5km away</p>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Spanish Tutoring</h4>
+                            <p>Native speaker with teaching experience</p>
+                            <div class="skill-meta">
+                                <span class="availability"><i class="far fa-clock"></i> Evenings</span>
+                                <span class="type"><i class="fas fa-user-friends"></i> In-Person</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wanted-skills">
+                                <p>Wants to learn:</p>
+                                <span>Graphic Design</span>
+                            </div>
+                            <button class="request-btn">Request Swap</button>
+                        </div>
+                        <div class="card-hover">
+                            <button class="quick-view">Quick View</button>
+                            <button class="save-skill"><i class="far fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Card 3 -->
+                    <div class="skill-card highlight" data-category="creative" data-level="beginner">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+                                <div>
+                                    <h3>Emma Rodriguez</h3>
+                                    <p><i class="fas fa-map-marker-alt"></i> 5.7km away</p>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.5</span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Photography</h4>
+                            <p>Portrait and landscape photography techniques</p>
+                            <div class="skill-meta">
+                                <span class="availability"><i class="far fa-clock"></i> Flexible</span>
+                                <span class="type"><i class="fas fa-user-friends"></i> In-Person</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wanted-skills">
+                                <p>Wants to learn:</p>
+                                <span>Web Development</span>
+                            </div>
+                            <button class="request-btn">Request Swap</button>
+                        </div>
+                        <div class="card-hover">
+                            <button class="quick-view">Quick View</button>
+                            <button class="save-skill"><i class="far fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Card 4 -->
+                    <div class="skill-card" data-category="professional" data-level="advanced">
+                        <div class="card-header">
+                            <div class="user-info">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User">
+                                <div>
+                                    <h3>Michael Chen</h3>
+                                    <p><i class="fas fa-map-marker-alt"></i> Online</p>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="skill-content">
+                            <h4>Financial Planning</h4>
+                            <p>Personal finance and investment strategies</p>
+                            <div class="skill-meta">
+                                <span class="availability"><i class="far fa-clock"></i> Weekdays</span>
+                                <span class="type"><i class="fas fa-laptop"></i> Online</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="wanted-skills">
+                                <p>Wants to learn:</p>
+                                <span>Video Editing</span>
+                            </div>
+                            <button class="request-btn">Request Swap</button>
+                        </div>
+                        <div class="card-hover">
+                            <button class="quick-view">Quick View</button>
+                            <button class="save-skill"><i class="far fa-bookmark"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="load-more">
+                    <button class="load-more-btn">Load More Skills</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>SkillSwap</h3>
+                    <p>Connecting people through the exchange of knowledge and skills.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse-skills.html">Browse Skills</a></li>
+                        <li><a href="add_skill.html">Add Skill</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SkillSwap. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/browse-skills.js"></script>
+</body>
+</html>
